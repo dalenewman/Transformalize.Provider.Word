@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Transformalize.Provider.Word</id>
+    <version>0.2.9-beta</version>
+    <title>Transformalize Provider Word</title>
+    <authors>Dale Newman</authors>
+    <owners>Dale Newman</owners>
+    <licenseUrl>https://github.com/dalenewman/Transformalize/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/dalenewman/Transformalize</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Word Provider for Transformalize</description>
+    <releaseNotes>an inactive work in process</releaseNotes>
+    <copyright>Copyright 2013-2017</copyright>
+    <tags>etl</tags>
+    <dependencies>
+      <group targetFramework="net452">
+        <dependency id="Transformalize.Provider.OpenXml" version="0.2.9-beta" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="src\Transformalize.Provider.Word\bin\Release\Transformalize.Provider.Word.dll" target="lib\net452\Transformalize.Provider.Word.dll" />
+  </files>
+</package>

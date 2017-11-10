@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{55D0A6B7-B384-4A6E-8F44-61F599FEE43B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transformalize.Provider.Word", "src\Transformalize.Provider.Word\Transformalize.Provider.Word.csproj", "{A92EF932-3AE9-47FA-8958-D8424916635F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transformalize.Provider.Word.Autofac", "src\Transformalize.Provider.Word.Autofac\Transformalize.Provider.Word.Autofac.csproj", "{A942E7D7-3A8C-48A5-86C4-6CFE2024A3DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF7A7AB0-1A94-4225-8414-A7104D62FF33}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.bat = nuget.bat
+		README.md = README.md
+		Transformalize.Provider.Word.Autofac.nuspec = Transformalize.Provider.Word.Autofac.nuspec
+		Transformalize.Provider.Word.nuspec = Transformalize.Provider.Word.nuspec
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A92EF932-3AE9-47FA-8958-D8424916635F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A92EF932-3AE9-47FA-8958-D8424916635F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A92EF932-3AE9-47FA-8958-D8424916635F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A92EF932-3AE9-47FA-8958-D8424916635F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A942E7D7-3A8C-48A5-86C4-6CFE2024A3DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A942E7D7-3A8C-48A5-86C4-6CFE2024A3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A942E7D7-3A8C-48A5-86C4-6CFE2024A3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A942E7D7-3A8C-48A5-86C4-6CFE2024A3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A92EF932-3AE9-47FA-8958-D8424916635F} = {55D0A6B7-B384-4A6E-8F44-61F599FEE43B}
+		{A942E7D7-3A8C-48A5-86C4-6CFE2024A3DF} = {55D0A6B7-B384-4A6E-8F44-61F599FEE43B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCB0F350-AF48-4099-8DB6-7B71BA564719}
+	EndGlobalSection
+EndGlobal
