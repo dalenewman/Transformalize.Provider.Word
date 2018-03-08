@@ -16,7 +16,7 @@
     <dependencies>
       <group targetFramework="net452">
         <dependency id="Autofac" version="4.6.2" />
-        <dependency id="Transformalize" version="0.2.9-beta" />
+        <dependency id="Transformalize.Provider.Word" version="0.2.9-beta" />
       </group>
     </dependencies>
   </metadata>
