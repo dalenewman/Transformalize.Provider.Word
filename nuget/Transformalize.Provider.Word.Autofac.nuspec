@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Transformalize.Provider.Word.Autofac</id>
-    <version>0.2.9-beta</version>
+    <version>0.5.0-beta</version>
     <title>Transformalize Provider Word Autofac</title>
     <authors>Dale Newman</authors>
     <owners>Dale Newman</owners>
@@ -10,17 +10,17 @@
     <projectUrl>https://github.com/dalenewman/Transformalize</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Word Provider for Transformalize Autofac</description>
-    <releaseNotes>an inactive work in process</releaseNotes>
-    <copyright>Copyright 2013-2017</copyright>
+    <releaseNotes>updated libraries, but still un-maintained at this point</releaseNotes>
+    <copyright>Copyright 2013-2019</copyright>
     <tags>etl</tags>
     <dependencies>
-      <group targetFramework="net452">
+      <group targetFramework="net462">
         <dependency id="Autofac" version="4.6.2" />
-        <dependency id="Transformalize.Provider.Word" version="0.2.9-beta" />
+        <dependency id="Transformalize.Provider.Word" version="0.5.0-beta" />
       </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="src\Transformalize.Provider.Word.Autofac\bin\Release\Transformalize.Provider.Word.Autofac.dll" target="lib\net452\Transformalize.Provider.Word.Autofac.dll" />
+    <file src="..\src\Transformalize.Provider.Word.Autofac\bin\Release\Transformalize.Provider.Word.Autofac.dll" target="lib\net462\Transformalize.Provider.Word.Autofac.dll" />
   </files>
 </package>

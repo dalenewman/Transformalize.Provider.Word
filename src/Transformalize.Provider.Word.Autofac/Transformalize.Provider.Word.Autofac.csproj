@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Transformalize.Providers.Word.Autofac</RootNamespace>
     <AssemblyName>Transformalize.Provider.Word.Autofac</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,16 +34,16 @@
     <Reference Include="Autofac, Version=4.6.2.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Autofac.4.6.2\lib\net45\Autofac.dll</HintPath>
     </Reference>
-    <Reference Include="CfgNet, Version=0.10.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Cfg-NET.0.10.2\lib\net452\CfgNet.dll</HintPath>
+    <Reference Include="CfgNet, Version=0.10.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Cfg-NET.0.10.4\lib\net452\CfgNet.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
-    <Reference Include="Transformalize, Version=0.2.9.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Transformalize.0.2.9-beta\lib\net452\Transformalize.dll</HintPath>
+    <Reference Include="Transformalize, Version=0.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Transformalize.0.5.1-beta\lib\net452\Transformalize.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -65,4 +66,28 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>set f="$(SolutionDir)..\Transformalize\Pipeline.Command\plugins"
+
+if exist %25f%25 copy /Y "$(TargetDir)DIaLOGIKa.b2xtranslator.CommonTranslatorLib.dll" "%25f%25"
+if exist %25f%25 copy /Y "$(TargetDir)DIaLOGIKa.b2xtranslator.DocFileFormat.dll" "%25f%25"
+if exist %25f%25 copy /Y "$(TargetDir)DIaLOGIKa.b2xtranslator.OfficeDrawing.dll" "%25f%25"
+if exist %25f%25 copy /Y "$(TargetDir)DIaLOGIKa.b2xtranslator.OpenXmlLib.dll" "%25f%25"
+if exist %25f%25 copy /Y "$(TargetDir)DIaLOGIKa.b2xtranslator.StructuredStorage.dll" "%25f%25"
+
+if exist %25f%25 copy /Y "$(TargetDir)DIaLOGIKa.b2xtranslator.Tools.dll" "%25f%25"
+if exist %25f%25 copy /Y "$(TargetDir)DIaLOGIKa.b2xtranslator.WordprocessingMLMapping.dll" "%25f%25"
+if exist %25f%25 copy /Y "$(TargetDir)DIaLOGIKa.b2xtranslator.ZipUtils" "%25f%25"
+
+if exist %25f%25 copy /Y "$(TargetDir)DocumentFormat.OpenXml.dll" "%25f%25"
+if exist %25f%25 copy /Y "$(TargetDir)OpenXmlPowerTools.dll" "%25f%25"
+if exist %25f%25 copy /Y "$(TargetDir)System.Management.Automation.dll" "%25f%25"
+if exist %25f%25 copy /Y "$(TargetDir)Transformalize.Provider.Word.Autofac.dll" "%25f%25"
+if exist %25f%25 copy /Y "$(TargetDir)Transformalize.Provider.Word.dll" "%25f%25"
+if exist %25f%25 copy /Y "$(TargetDir)zlibwapi.dll" "%25f%25"
+
+
+
+</PostBuildEvent>
+  </PropertyGroup>
 </Project>
